@@ -1,0 +1,67 @@
+
+.product-details{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .sub-details{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        .back-home{
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            border-radius: 20px;
+            color: white !important;
+            #arrow{
+                margin-top: 5px;
+            }
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+        .reciepe{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            box-shadow: 2px 1px 2px grey;
+            padding: 12px;
+            ul {
+                list-style: none;
+            }
+            .food-pairing{
+                &:hover{
+                    opacity: 0.4;
+                }
+            }
+            .tagline-abv{
+                &:hover{
+                    opacity: 0.4;
+                }
+            }
+        }
+        .image-description {
+           img {
+                height: 500px;
+                width: 150px;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            object-fit: cover;
+        }
+       .description{
+        width: 300px;
+        border: 2px solid gray;
+        margin-left: 15px;
+        padding: 12px;
+        &:hover{
+            opacity: 0.5;
+        }
+       }
+    }
+    
+}
+
+
+

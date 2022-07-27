@@ -1,17 +1,14 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import { beerApi } from '../services/beerApi';
+import beerReducer from '../features/beer/beerSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    beer: beerReducer,
+    [beerApi.reducerPath]: beerApi.reducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(beerApi.middleware),
 });
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
->;

@@ -1,0 +1,20 @@
+
+.nav-bar{
+    #link {
+        text-decoration: none;
+        color: inherit;
+    }
+    #curt{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: red;
+        }
+    }
+    
+}
+
+
+

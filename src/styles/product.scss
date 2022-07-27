@@ -1,0 +1,54 @@
+.product {
+    .card {
+        
+        .card-link{
+            
+            .card-image {
+                img {
+                    width: 100px;
+                    height: 400px;
+    
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+    
+                object-fit: contain;
+                padding: 8px;
+                &:hover {
+                    border: 2px solid green;
+                    border-radius: 8px;
+                }
+            }
+        }
+        
+        width: 200px;
+        box-shadow: 2px 1px 2px rgb(189, 182, 182);
+        height: 530px;
+        position: relative;
+        margin-bottom: 20px;
+        .card-footer{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            .card-icons{
+                &:hover{
+                    opacity: 0.7;
+                    color: green;
+                }
+
+            }
+        }
+
+    }
+
+
+}
+
+@media only screen and (max-width: 700px){
+    .card{
+      width: 300px !important;  
+    }
+}
+
+

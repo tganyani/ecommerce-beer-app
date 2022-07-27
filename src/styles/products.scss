@@ -1,0 +1,28 @@
+.products{
+    display: flex;
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.pagination{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: skyblue;
+    margin-top: 20px;
+}
+.search-bar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+    input{
+        width: 60%;
+        height: 30px;
+    }
+}
