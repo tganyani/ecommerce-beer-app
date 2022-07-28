@@ -8,9 +8,9 @@ export  function Footer(){
 
     return (
         <div className="footer">
-            <a href="https://github.com/cblessi25" > <GitHubIcon className='footer-icon'/></a>
-            <a href="mailto:cblessi@mail.ru" ><EmailIcon className='footer-icon'/></a>
-            <p>&copy; 2022</p> 
+            <a href="https://github.com/tganyani/ecommerce-beer-app"> <GitHubIcon className='footer-icon'/></a>
+            <a href="mailto:tatendaganyani5@gmail.com" ><EmailIcon className='footer-icon'/></a>
+            <p>tgb&copy; 2022</p> 
         </div>
     )
 }

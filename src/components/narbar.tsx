@@ -88,7 +88,7 @@ export function NavBar() {
               {
                 beersInCurt.map((beer: BeerState, i)=>(
                   <tr key={beer.id}>
-                    <td>{i}</td>
+                    <td>{i+1}</td>
                     <td>{beer.name}</td>
                     <td>1</td>
                     <td id={String(beer.id)} onClick={handleRemoveBeerFromCurt}><ClearIcon /></td>
